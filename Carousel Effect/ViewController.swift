@@ -17,6 +17,12 @@ struct CVModel{
 class ViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var lblName: UILabel!
+    @IBOutlet weak var lblLocation: UILabel!
+    @IBOutlet weak var txtDesc: UITextView!
+    @IBOutlet weak var imageBack: UIImageView!
+    
+    
     
     var arrData:[CVModel] = []
     
@@ -87,6 +93,37 @@ extension ViewController: UICollectionViewDelegate,UICollectionViewDataSource{
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! CollectionViewCell
         cell.imgView.image = arrData[indexPath.row].image
         cell.lblTitle.text = arrData[indexPath.row].title
+        print(indexPath.row)
+        let ch = indexPath.row - 1
+        switch ch {
+        case 0:
+            updateData(name: "Trees", location: "India", desc: "Image Contains Trees and a Sunset", image: arrData[indexPath.row].image)
+        case 1:
+            updateData(name: arrData[ch].title, location: "England", desc: "Image Containg Water and Stones.", image: arrData[indexPath.row].image)
+        case 2:
+            updateData(name: arrData[ch].title, location: "Australia", desc: "Image Contains Waterfall which is in Australia", image: arrData[indexPath.row].image)
+        case 3:
+           updateData(name: arrData[ch].title, location: "Canada", desc: "This are Buildings present in Canada", image: arrData[indexPath.row].image)
+        case 4:
+            updateData(name: arrData[ch].title, location: "Srilanka", desc: "This Image Contains an Evening pic clicked in Srilanka", image: arrData[indexPath.row].image)
+        case 5:
+         updateData(name: arrData[ch].title, location: "Dubai", desc: "Clicked in Dubai", image: arrData[indexPath.row].image)
+        case 6:
+             updateData(name: arrData[ch].title, location: "Mexico", desc: "Fire burn in dubai", image: arrData[indexPath.row].image)
+        default:
+          break
+            
+        }
         return cell
     }
+    
+    func updateData(name: String,location: String,desc:String,image:UIImage)
+    {
+        lblName.text = "Place Name = \(name)"
+        lblLocation.text = "Place Location = \(location)"
+        txtDesc.text = "Description - \(desc)"
+        imageBack.image = image
+        
+    }
+    
 }
