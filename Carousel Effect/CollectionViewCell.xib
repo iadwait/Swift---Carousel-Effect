@@ -10,20 +10,20 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="gTV-IL-0wX" customClass="CollectionViewCell" customModule="Carousel_Effect" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="228" height="440"/>
+            <rect key="frame" x="0.0" y="0.0" width="228" height="281"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="228" height="440"/>
+                <rect key="frame" x="0.0" y="0.0" width="228" height="281"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zwb-pa-Pew">
-                        <rect key="frame" x="10" y="10" width="208" height="420"/>
+                        <rect key="frame" x="10" y="10" width="208" height="261"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zVV-xg-8ec">
-                                <rect key="frame" x="0.0" y="0.0" width="208" height="420"/>
+                                <rect key="frame" x="0.0" y="0.0" width="208" height="261"/>
                             </imageView>
-                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PDb-ON-QOy">
-                                <rect key="frame" x="0.0" y="228" width="208" height="192"/>
+                            <visualEffectView hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PDb-ON-QOy">
+                                <rect key="frame" x="0.0" y="69" width="208" height="192"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="QbX-Ep-jke">
                                     <rect key="frame" x="0.0" y="0.0" width="208" height="192"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -74,13 +74,13 @@
                 <constraint firstItem="Zwb-pa-Pew" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="jTz-7f-0qT"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
-            <size key="customSize" width="228" height="440"/>
+            <size key="customSize" width="228" height="281"/>
             <connections>
                 <outlet property="imgView" destination="zVV-xg-8ec" id="UHk-XK-dAc"/>
                 <outlet property="lblTitle" destination="gcy-MN-ovW" id="Z3N-fm-K4l"/>
                 <outlet property="mainView" destination="Zwb-pa-Pew" id="Ry0-d4-MXy"/>
             </connections>
-            <point key="canvasLocation" x="63.768115942028992" y="232.36607142857142"/>
+            <point key="canvasLocation" x="63.768115942028992" y="179.12946428571428"/>
         </collectionViewCell>
     </objects>
 </document>
