@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="gTV-IL-0wX" customClass="CollectionViewCell" customModule="Carousel_Effect" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="228" height="440"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="228" height="440"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zwb-pa-Pew">
+                        <rect key="frame" x="10" y="10" width="208" height="420"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zVV-xg-8ec">
+                                <rect key="frame" x="0.0" y="0.0" width="208" height="420"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PDb-ON-QOy">
+                                <rect key="frame" x="0.0" y="228" width="208" height="192"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="QbX-Ep-jke">
+                                    <rect key="frame" x="0.0" y="0.0" width="208" height="192"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gcy-MN-ovW">
+                                            <rect key="frame" x="0.0" y="0.0" width="208" height="192"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="gcy-MN-ovW" firstAttribute="leading" secondItem="QbX-Ep-jke" secondAttribute="leading" id="7sf-eX-Dne"/>
+                                        <constraint firstAttribute="bottom" secondItem="gcy-MN-ovW" secondAttribute="bottom" id="F36-ng-od4"/>
+                                        <constraint firstItem="gcy-MN-ovW" firstAttribute="top" secondItem="QbX-Ep-jke" secondAttribute="top" id="PW0-sW-nEu"/>
+                                        <constraint firstAttribute="trailing" secondItem="gcy-MN-ovW" secondAttribute="trailing" id="tBS-zd-HuT"/>
+                                    </constraints>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="192" id="qdU-hR-gKH"/>
+                                </constraints>
+                                <blurEffect style="regular"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="zVV-xg-8ec" secondAttribute="bottom" id="1mn-0T-ZrK"/>
+                            <constraint firstItem="zVV-xg-8ec" firstAttribute="top" secondItem="Zwb-pa-Pew" secondAttribute="top" id="RyK-Q3-p6j"/>
+                            <constraint firstItem="PDb-ON-QOy" firstAttribute="top" secondItem="Zwb-pa-Pew" secondAttribute="top" constant="280" id="Wg3-wJ-xaj"/>
+                            <constraint firstItem="PDb-ON-QOy" firstAttribute="leading" secondItem="Zwb-pa-Pew" secondAttribute="leading" id="XmP-LJ-0aN"/>
+                            <constraint firstAttribute="bottom" secondItem="PDb-ON-QOy" secondAttribute="bottom" id="mqR-N1-o73"/>
+                            <constraint firstAttribute="trailing" secondItem="zVV-xg-8ec" secondAttribute="trailing" id="sQl-y2-Q28"/>
+                            <constraint firstItem="zVV-xg-8ec" firstAttribute="leading" secondItem="Zwb-pa-Pew" secondAttribute="leading" id="tly-cA-4Nx"/>
+                            <constraint firstAttribute="trailing" secondItem="PDb-ON-QOy" secondAttribute="trailing" id="xKm-6u-K92"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Wg3-wJ-xaj"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Zwb-pa-Pew" secondAttribute="bottom" constant="10" id="50L-q8-ose"/>
+                <constraint firstAttribute="trailing" secondItem="Zwb-pa-Pew" secondAttribute="trailing" constant="10" id="7Lg-Sj-Zmh"/>
+                <constraint firstItem="Zwb-pa-Pew" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="g1g-ia-sXs"/>
+                <constraint firstItem="Zwb-pa-Pew" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="jTz-7f-0qT"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="228" height="440"/>
+            <connections>
+                <outlet property="imgView" destination="zVV-xg-8ec" id="UHk-XK-dAc"/>
+                <outlet property="lblTitle" destination="gcy-MN-ovW" id="Z3N-fm-K4l"/>
+                <outlet property="mainView" destination="Zwb-pa-Pew" id="Ry0-d4-MXy"/>
+            </connections>
+            <point key="canvasLocation" x="63.768115942028992" y="232.36607142857142"/>
+        </collectionViewCell>
+    </objects>
+</document>
